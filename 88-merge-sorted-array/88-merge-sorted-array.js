@@ -15,7 +15,7 @@ var merge = function(nums1, m, nums2, n) {
     };
     for(var j=0;j<nums1.length;j++){                                //O(n)
         for(var k=j+1;k<nums1.length;k++){                          //O(n)
-            if(nums1[k]<nums1[j]){                                  //O(n)
+            if(nums1[k]<nums1[j]){                                  
                 temp=nums1[j];
                 nums1[j]=nums1[k];
                 nums1[k]=temp;
@@ -24,4 +24,4 @@ var merge = function(nums1, m, nums2, n) {
     };
     return nums1;        
 };
-                                                                    //total= O(n + (n*n*n)) = O(n + n^3) = O(n^3) 
+                                                                    //total= O(n + (n*n)) = O(n + n^2) = O(n^2) 
