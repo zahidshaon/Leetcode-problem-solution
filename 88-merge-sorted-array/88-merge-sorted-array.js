@@ -6,11 +6,10 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function(nums1, m, nums2, n) {
-    var x=m;
     for(var i=0;i<n;i++){                                            //O(n)
-        if(nums1[x] == 0 || nums1[x] == null){
-            nums1[x]=nums2[i];
-            x++;
+        if(nums1[m] == 0 || nums1[m] == null){
+            nums1[m]=nums2[i];
+            m++;
         }
     };
     for(var j=0;j<nums1.length;j++){                                //O(n)
