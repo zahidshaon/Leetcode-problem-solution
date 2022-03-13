@@ -5,7 +5,7 @@
  */
 var countOdds = function(low, high) {
     var c = 0;
-    if(low==high & low%2==1){
+    if(low==high && low%2==1){
       return 1;
     }
     for(let i= low; i<high+1; i++){
