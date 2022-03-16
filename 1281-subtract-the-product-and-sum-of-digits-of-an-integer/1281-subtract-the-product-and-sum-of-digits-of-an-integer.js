@@ -12,7 +12,6 @@ var subtractProductAndSum = function(n) {
         n=parseInt(n/10);
         c++;
     }
-    console.log(a)
     for(let i=0;i<a.length;i++){
         product=product*a[i];
         sum=sum+a[i];
